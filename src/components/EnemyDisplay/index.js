@@ -16,7 +16,8 @@ class EnemyDisplay extends Component {
     
     render() {
         return (
-            <div className="enemy-display"> L'ennemi </div>
+            <div className="enemy-display">
+            <img id="enemy-img" src={require('../../img/leroiLiche.gif')} /> </div>
         );
     };
 } 

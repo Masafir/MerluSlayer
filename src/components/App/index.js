@@ -35,7 +35,6 @@ class App extends React.Component {
           <h1 id="title">CONJON</h1>
           <div id="app-display">
           {React.createElement(stage,{...this.props})}
-          { actual === 0 ? '' : <button className="app-button" onClick={this.gohome}>Give up</button> }
           </div>
         </div>
           

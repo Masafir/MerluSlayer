@@ -19,10 +19,11 @@ import './display.scss';
  */
 class Display extends Component {
 
+    gohome = () => {
 
-    componentWillMount(){
-        console.log(this.props);
-    }
+        const { gotostage } = this.props;
+        gotostage(0);
+      }
     render() {
         
         return (
@@ -34,6 +35,7 @@ class Display extends Component {
                 <TextArea />
                 <GamingDisplay />
                 <Herodisplay />
+                <button className="app-button" onClick={this.gohome}>Give up</button>
             </div>
         );
     };

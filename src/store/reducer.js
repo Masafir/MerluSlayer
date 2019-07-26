@@ -11,13 +11,17 @@ const initialState = {
     Display
   ],
   hp: [true,true,true],
+  event: {
+    choose: true,
+    scribe: false,
+  }
 };
 
 /**
  * Types
  */
 const GO_STAGE = 'GO_STAGE';
-
+const GO_TO_CHOOSE = 'GO_TO_CHOOSE';
 /**
  * Reducer
  */
@@ -28,7 +32,12 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         actual: action.stage,
       };
-
+    case GO_TO_CHOOSE:
+    return {
+      ...state,
+      hp: initialState.hp,
+      event: initialState.event
+    }
     default:
       return state;
   }
@@ -41,11 +50,9 @@ export const gotostage = (stageN) => ({
   type: GO_STAGE,
   stage: stageN,
 });
-
-/**
- * Selectors
- */
-
+export const gotochoose = () => ({
+  type: GO_TO_CHOOSE,
+});
 
 /**
  * Export
