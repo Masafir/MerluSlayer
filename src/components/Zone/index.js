@@ -6,20 +6,20 @@ import PropTypes from 'prop-types';
 /**
  * Local import
  */
-import './timer.scss';
+import './zone.scss';
 
 /**
  * Code
  */
 
- class Timer extends React.Component {
+ class Zone extends React.Component {
     
 
     render() {
          console.log(this.props);
     return(
-        <div className="timer">
-            00.00
+        <div className="Area">
+            Nulle part
         </div>
     );
 } };
@@ -27,4 +27,4 @@ import './timer.scss';
 /**
  * Export
  */
-export default Timer;
+export default Zone;

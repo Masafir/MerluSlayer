@@ -2,7 +2,6 @@
  * NPM import
  */
 import React from 'react';
-import PropTypes from 'prop-types';
 /**
  * Local import
  */
@@ -18,7 +17,8 @@ import './herodisplay.scss';
     render() {
          console.log(this.props);
     return(
-        <div className="herodisplay">
+        <div className="hero-display">
+            <img id="hero-img" src={require('../../img/Hero.gif')} />
         </div>
     );
 } };
