@@ -1,0 +1,13 @@
+.lifebar {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 0 auto 0.5em;
+}
+.full {
+    color: darkred;
+}
+
+.empty {
+    color: #fff;
+}
