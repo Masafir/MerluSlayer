@@ -4,7 +4,7 @@
 import React,{ Component } from 'react';
 import Lifebar from '../Lifebar';
 import TextArea from '../TextArea';
-import GamingDisplay from '../GamingDisplay';
+import GamingDisplay from '../../containers/GameContainer';
 import EnemyDisplay from '../EnemyDisplay';
 import Herodisplay from '../HeroDisplay';
 import Timer from '../Timer';
@@ -25,7 +25,7 @@ class Display extends Component {
         gotostage(0);
       }
     render() {
-        
+        console.log('on passe quand même ici');
         return (
             <div id="Display">
                 <Lifebar lifepoint={this.props.life} />

@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import Home from '../Home';
-import Display from '../GamingDisplay';
+import Display from '../Display';
 /**
  * Local import
  */
